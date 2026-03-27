@@ -68,7 +68,7 @@
       "parameters": {
         "resource": "web",
         "operation": "crawlSitemap",
-        "url": "https://example.com/sitemap.xml"
+        "domain": "example.com"
       },
       "id": "web-sitemap",
       "name": "Web: Crawl Sitemap",
