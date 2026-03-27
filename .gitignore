@@ -1,5 +1,8 @@
 .planning/
+.claude/
+CLAUDE.md
 node_modules/
 dist/
 *.tsbuildinfo
 .DS_Store
+*.tgz
