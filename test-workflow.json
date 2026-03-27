@@ -8,7 +8,7 @@
       "name": "Start",
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [0, 0]
+      "position": [0, 300]
     },
     {
       "parameters": {
@@ -20,11 +20,11 @@
       "name": "Web: Scrape Markdown",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, -400],
+      "position": [300, -200],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -38,11 +38,11 @@
       "name": "Web: Scrape HTML",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, -250],
+      "position": [300, -50],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -56,11 +56,11 @@
       "name": "Web: Extract Images",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, -100],
+      "position": [300, 100],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -74,11 +74,11 @@
       "name": "Web: Crawl Sitemap",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 50],
+      "position": [300, 250],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -92,11 +92,11 @@
       "name": "Brand: Get by Domain",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 250],
+      "position": [300, 450],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -110,29 +110,29 @@
       "name": "Brand: Get by Email",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 400],
+      "position": [300, 600],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
     {
       "parameters": {
         "resource": "brand",
-        "operation": "getByCompanyName",
-        "companyName": "Stripe"
+        "operation": "getByName",
+        "name": "Stripe"
       },
       "id": "brand-company",
-      "name": "Brand: Get by Company",
+      "name": "Brand: Get by Name",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 550],
+      "position": [300, 750],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -146,11 +146,11 @@
       "name": "Brand: Get by Ticker",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 700],
+      "position": [600, -200],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -164,11 +164,11 @@
       "name": "Brand: Extract Colors",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, -400],
+      "position": [600, -50],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -182,11 +182,11 @@
       "name": "Brand: Extract Fonts",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, -250],
+      "position": [600, 100],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -200,11 +200,11 @@
       "name": "Brand: Extract Styleguide",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, -100],
+      "position": [600, 250],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -218,11 +218,11 @@
       "name": "Brand: Prefetch",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 50],
+      "position": [600, 400],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -230,17 +230,17 @@
       "parameters": {
         "resource": "brand",
         "operation": "classifyNaics",
-        "domain": "stripe.com"
+        "input": "stripe.com"
       },
       "id": "brand-naics",
       "name": "Brand: Classify NAICS",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 200],
+      "position": [600, 550],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -254,11 +254,11 @@
       "name": "Screenshot: Take",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 400],
+      "position": [600, 700],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -266,17 +266,17 @@
       "parameters": {
         "resource": "transaction",
         "operation": "identifyBrand",
-        "descriptor": "AMZN Mktp US*AB12345"
+        "transaction_info": "AMZN Mktp US*AB12345"
       },
       "id": "transaction",
       "name": "Transaction: Match",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 550],
+      "position": [900, -200],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     },
@@ -290,7 +290,8 @@
             {
               "datapoint_name": "founded_year",
               "datapoint_type": "number",
-              "datapoint_description": "Year the company was founded"
+              "datapoint_description": "Year the company was founded",
+              "datapoint_example": "1976"
             }
           ]
         }
@@ -299,11 +300,11 @@
       "name": "AI: Query",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 700],
+      "position": [900, -50],
       "credentials": {
         "contextDevApi": {
           "id": "",
-          "name": "Context.dev API"
+          "name": ""
         }
       }
     }
@@ -318,7 +319,7 @@
           { "node": "Web: Crawl Sitemap", "type": "main", "index": 0 },
           { "node": "Brand: Get by Domain", "type": "main", "index": 0 },
           { "node": "Brand: Get by Email", "type": "main", "index": 0 },
-          { "node": "Brand: Get by Company", "type": "main", "index": 0 },
+          { "node": "Brand: Get by Name", "type": "main", "index": 0 },
           { "node": "Brand: Get by Ticker", "type": "main", "index": 0 },
           { "node": "Brand: Extract Colors", "type": "main", "index": 0 },
           { "node": "Brand: Extract Fonts", "type": "main", "index": 0 },
