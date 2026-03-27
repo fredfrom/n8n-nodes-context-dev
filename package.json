@@ -1,9 +1,11 @@
 {
   "name": "n8n-nodes-context-dev",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for the Context.dev API — web scraping, brand intelligence, and transaction matching",
   "license": "MIT",
-  "keywords": ["n8n-community-node-package"],
+  "keywords": [
+    "n8n-community-node-package"
+  ],
   "author": {
     "name": "Friedemann Frommelt",
     "email": "friedemannfrommelt1996@gmail.com"
@@ -22,7 +24,9 @@
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": true,
