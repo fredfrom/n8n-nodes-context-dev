@@ -266,7 +266,7 @@
       "parameters": {
         "resource": "transaction",
         "operation": "identifyBrand",
-        "transaction_info": "AMZN Mktp US*AB12345"
+        "transaction_info": "AMAZON.COM"
       },
       "id": "transaction",
       "name": "Transaction: Match",
