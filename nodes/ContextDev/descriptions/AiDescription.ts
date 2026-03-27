@@ -80,8 +80,9 @@ export const aiProperties: INodeProperties[] = [
 						displayName: 'Example',
 						name: 'datapoint_example',
 						type: 'string',
+						required: true,
 						default: '',
-						description: 'Example value to guide extraction',
+						description: 'Example value to guide extraction (required by the API)',
 					},
 					{
 						displayName: 'List Item Type',
