@@ -73,7 +73,7 @@ export const brandProperties: INodeProperties[] = [
 		default: 'getByDomain',
 	},
 
-	// Domain field — shared by getByDomain, extractColors, extractFonts, extractStyleguide, extractProducts, prefetch, classifyIndustry
+	// Domain field — shared by getByDomain, extractColors, extractFonts, extractStyleguide, extractProducts, prefetch
 	{
 		displayName: 'Domain',
 		name: 'domain',
@@ -90,7 +90,6 @@ export const brandProperties: INodeProperties[] = [
 					'extractStyleguide',
 					'extractProducts',
 					'prefetch',
-					'classifyIndustry',
 				],
 			},
 		},

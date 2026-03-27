@@ -229,7 +229,7 @@
     {
       "parameters": {
         "resource": "brand",
-        "operation": "classifyNaics",
+        "operation": "classifyIndustry",
         "input": "stripe.com"
       },
       "id": "brand-naics",
