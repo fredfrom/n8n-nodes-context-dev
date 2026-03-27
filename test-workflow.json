@@ -1,0 +1,338 @@
+{
+  "id": "contextdev-test-001",
+  "name": "Context.dev - Test All Operations",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "start",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "scrapeMarkdown",
+        "url": "https://example.com"
+      },
+      "id": "web-markdown",
+      "name": "Web: Scrape Markdown",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, -400],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "scrapeHtml",
+        "url": "https://example.com"
+      },
+      "id": "web-html",
+      "name": "Web: Scrape HTML",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, -250],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "extractImages",
+        "url": "https://example.com"
+      },
+      "id": "web-images",
+      "name": "Web: Extract Images",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, -100],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "crawlSitemap",
+        "url": "https://example.com/sitemap.xml"
+      },
+      "id": "web-sitemap",
+      "name": "Web: Crawl Sitemap",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, 50],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "getByDomain",
+        "domain": "stripe.com"
+      },
+      "id": "brand-domain",
+      "name": "Brand: Get by Domain",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, 250],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "getByEmail",
+        "email": "support@stripe.com"
+      },
+      "id": "brand-email",
+      "name": "Brand: Get by Email",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, 400],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "getByCompanyName",
+        "companyName": "Stripe"
+      },
+      "id": "brand-company",
+      "name": "Brand: Get by Company",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, 550],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "getByTicker",
+        "ticker": "AAPL"
+      },
+      "id": "brand-ticker",
+      "name": "Brand: Get by Ticker",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [300, 700],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "extractColors",
+        "domain": "stripe.com"
+      },
+      "id": "brand-colors",
+      "name": "Brand: Extract Colors",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, -400],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "extractFonts",
+        "domain": "stripe.com"
+      },
+      "id": "brand-fonts",
+      "name": "Brand: Extract Fonts",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, -250],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "extractStyleguide",
+        "domain": "stripe.com"
+      },
+      "id": "brand-styleguide",
+      "name": "Brand: Extract Styleguide",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, -100],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "prefetch",
+        "domain": "stripe.com"
+      },
+      "id": "brand-prefetch",
+      "name": "Brand: Prefetch",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, 50],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "brand",
+        "operation": "classifyNaics",
+        "domain": "stripe.com"
+      },
+      "id": "brand-naics",
+      "name": "Brand: Classify NAICS",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, 200],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "screenshot",
+        "operation": "takeScreenshot",
+        "domain": "example.com"
+      },
+      "id": "screenshot",
+      "name": "Screenshot: Take",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, 400],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "transaction",
+        "operation": "identifyBrand",
+        "descriptor": "AMZN Mktp US*AB12345"
+      },
+      "id": "transaction",
+      "name": "Transaction: Match",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, 550],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "aiExtraction",
+        "operation": "aiQuery",
+        "domain": "apple.com",
+        "dataToExtract": {
+          "values": [
+            {
+              "datapoint_name": "founded_year",
+              "datapoint_type": "number",
+              "datapoint_description": "Year the company was founded"
+            }
+          ]
+        }
+      },
+      "id": "ai-query",
+      "name": "AI: Query",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [600, 700],
+      "credentials": {
+        "contextDevApi": {
+          "id": "",
+          "name": "Context.dev API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          { "node": "Web: Scrape Markdown", "type": "main", "index": 0 },
+          { "node": "Web: Scrape HTML", "type": "main", "index": 0 },
+          { "node": "Web: Extract Images", "type": "main", "index": 0 },
+          { "node": "Web: Crawl Sitemap", "type": "main", "index": 0 },
+          { "node": "Brand: Get by Domain", "type": "main", "index": 0 },
+          { "node": "Brand: Get by Email", "type": "main", "index": 0 },
+          { "node": "Brand: Get by Company", "type": "main", "index": 0 },
+          { "node": "Brand: Get by Ticker", "type": "main", "index": 0 },
+          { "node": "Brand: Extract Colors", "type": "main", "index": 0 },
+          { "node": "Brand: Extract Fonts", "type": "main", "index": 0 },
+          { "node": "Brand: Extract Styleguide", "type": "main", "index": 0 },
+          { "node": "Brand: Prefetch", "type": "main", "index": 0 },
+          { "node": "Brand: Classify NAICS", "type": "main", "index": 0 },
+          { "node": "Screenshot: Take", "type": "main", "index": 0 },
+          { "node": "Transaction: Match", "type": "main", "index": 0 },
+          { "node": "AI: Query", "type": "main", "index": 0 }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
