@@ -8,79 +8,7 @@
       "name": "Start",
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [0, 300]
-    },
-    {
-      "parameters": {
-        "resource": "web",
-        "operation": "scrapeMarkdown",
-        "url": "https://example.com"
-      },
-      "id": "web-markdown",
-      "name": "Web: Scrape Markdown",
-      "type": "n8n-nodes-context-dev.contextDev",
-      "typeVersion": 1,
-      "position": [300, -200],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
-    },
-    {
-      "parameters": {
-        "resource": "web",
-        "operation": "scrapeHtml",
-        "url": "https://example.com"
-      },
-      "id": "web-html",
-      "name": "Web: Scrape HTML",
-      "type": "n8n-nodes-context-dev.contextDev",
-      "typeVersion": 1,
-      "position": [300, -50],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
-    },
-    {
-      "parameters": {
-        "resource": "web",
-        "operation": "extractImages",
-        "url": "https://example.com"
-      },
-      "id": "web-images",
-      "name": "Web: Extract Images",
-      "type": "n8n-nodes-context-dev.contextDev",
-      "typeVersion": 1,
-      "position": [300, 100],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
-    },
-    {
-      "parameters": {
-        "resource": "web",
-        "operation": "crawlSitemap",
-        "domain": "example.com"
-      },
-      "id": "web-sitemap",
-      "name": "Web: Crawl Sitemap",
-      "type": "n8n-nodes-context-dev.contextDev",
-      "typeVersion": 1,
-      "position": [300, 250],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [0, 0]
     },
     {
       "parameters": {
@@ -92,13 +20,8 @@
       "name": "Brand: Get by Domain",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 450],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [300, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -110,13 +33,8 @@
       "name": "Brand: Get by Email",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 600],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [600, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -128,13 +46,8 @@
       "name": "Brand: Get by Name",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [300, 750],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [900, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -146,13 +59,8 @@
       "name": "Brand: Get by Ticker",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, -200],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [1200, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -164,13 +72,8 @@
       "name": "Brand: Extract Colors",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, -50],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [1500, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -182,13 +85,8 @@
       "name": "Brand: Extract Fonts",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 100],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [1800, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -200,13 +98,8 @@
       "name": "Brand: Extract Styleguide",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 250],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [2100, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -218,13 +111,8 @@
       "name": "Brand: Prefetch",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 400],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [2400, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -236,13 +124,8 @@
       "name": "Brand: Classify NAICS",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 550],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [2700, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -254,13 +137,8 @@
       "name": "Screenshot: Take",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [600, 700],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [3000, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -272,13 +150,60 @@
       "name": "Transaction: Match",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [900, -200],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [3300, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "scrapeMarkdown",
+        "url": "https://example.com"
+      },
+      "id": "web-markdown",
+      "name": "Web: Scrape Markdown",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [3600, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "scrapeHtml",
+        "url": "https://example.com"
+      },
+      "id": "web-html",
+      "name": "Web: Scrape HTML",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [3900, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "extractImages",
+        "url": "https://example.com"
+      },
+      "id": "web-images",
+      "name": "Web: Extract Images",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [4200, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
+    },
+    {
+      "parameters": {
+        "resource": "web",
+        "operation": "crawlSitemap",
+        "domain": "example.com"
+      },
+      "id": "web-sitemap",
+      "name": "Web: Crawl Sitemap",
+      "type": "n8n-nodes-context-dev.contextDev",
+      "typeVersion": 1,
+      "position": [4500, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     },
     {
       "parameters": {
@@ -300,38 +225,27 @@
       "name": "AI: Query",
       "type": "n8n-nodes-context-dev.contextDev",
       "typeVersion": 1,
-      "position": [900, -50],
-      "credentials": {
-        "contextDevApi": {
-          "id": "",
-          "name": ""
-        }
-      }
+      "position": [4800, 0],
+      "credentials": { "contextDevApi": { "id": "", "name": "" } }
     }
   ],
   "connections": {
-    "Start": {
-      "main": [
-        [
-          { "node": "Web: Scrape Markdown", "type": "main", "index": 0 },
-          { "node": "Web: Scrape HTML", "type": "main", "index": 0 },
-          { "node": "Web: Extract Images", "type": "main", "index": 0 },
-          { "node": "Web: Crawl Sitemap", "type": "main", "index": 0 },
-          { "node": "Brand: Get by Domain", "type": "main", "index": 0 },
-          { "node": "Brand: Get by Email", "type": "main", "index": 0 },
-          { "node": "Brand: Get by Name", "type": "main", "index": 0 },
-          { "node": "Brand: Get by Ticker", "type": "main", "index": 0 },
-          { "node": "Brand: Extract Colors", "type": "main", "index": 0 },
-          { "node": "Brand: Extract Fonts", "type": "main", "index": 0 },
-          { "node": "Brand: Extract Styleguide", "type": "main", "index": 0 },
-          { "node": "Brand: Prefetch", "type": "main", "index": 0 },
-          { "node": "Brand: Classify NAICS", "type": "main", "index": 0 },
-          { "node": "Screenshot: Take", "type": "main", "index": 0 },
-          { "node": "Transaction: Match", "type": "main", "index": 0 },
-          { "node": "AI: Query", "type": "main", "index": 0 }
-        ]
-      ]
-    }
+    "Start": { "main": [[{ "node": "Brand: Get by Domain", "type": "main", "index": 0 }]] },
+    "Brand: Get by Domain": { "main": [[{ "node": "Brand: Get by Email", "type": "main", "index": 0 }]] },
+    "Brand: Get by Email": { "main": [[{ "node": "Brand: Get by Name", "type": "main", "index": 0 }]] },
+    "Brand: Get by Name": { "main": [[{ "node": "Brand: Get by Ticker", "type": "main", "index": 0 }]] },
+    "Brand: Get by Ticker": { "main": [[{ "node": "Brand: Extract Colors", "type": "main", "index": 0 }]] },
+    "Brand: Extract Colors": { "main": [[{ "node": "Brand: Extract Fonts", "type": "main", "index": 0 }]] },
+    "Brand: Extract Fonts": { "main": [[{ "node": "Brand: Extract Styleguide", "type": "main", "index": 0 }]] },
+    "Brand: Extract Styleguide": { "main": [[{ "node": "Brand: Prefetch", "type": "main", "index": 0 }]] },
+    "Brand: Prefetch": { "main": [[{ "node": "Brand: Classify NAICS", "type": "main", "index": 0 }]] },
+    "Brand: Classify NAICS": { "main": [[{ "node": "Screenshot: Take", "type": "main", "index": 0 }]] },
+    "Screenshot: Take": { "main": [[{ "node": "Transaction: Match", "type": "main", "index": 0 }]] },
+    "Transaction: Match": { "main": [[{ "node": "Web: Scrape Markdown", "type": "main", "index": 0 }]] },
+    "Web: Scrape Markdown": { "main": [[{ "node": "Web: Scrape HTML", "type": "main", "index": 0 }]] },
+    "Web: Scrape HTML": { "main": [[{ "node": "Web: Extract Images", "type": "main", "index": 0 }]] },
+    "Web: Extract Images": { "main": [[{ "node": "Web: Crawl Sitemap", "type": "main", "index": 0 }]] },
+    "Web: Crawl Sitemap": { "main": [[{ "node": "AI: Query", "type": "main", "index": 0 }]] }
   },
   "settings": {
     "executionOrder": "v1"
